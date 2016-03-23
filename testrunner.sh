@@ -1,7 +1,7 @@
 #!/bin/sh
 # ========================================
 GITHUB_ACCOUNT=anastasiaKot
-WS_DIR=Java_projects
+WS_DIR=.
 REPO_NAME=Title_Validation_CSV
 APP_VERSION=1.1
 MAIN_CLASS=coreofmine.Selenium_csv
@@ -34,4 +34,4 @@ cd ./$REPO_NAME
 
 mvn package
 echo "Executing Java programm ..."
-java -cp $HOME/$WS_DIR/$REPO_NAME/target/$REPO_NAME-$APP_VERSION.jar $MAIN_CLASS $ARGS_01
+java -cp $HOME/$WS_DIR/$REPO_NAME/target/$REPO_NAME-$APP_VERSION-jar-with-dependencies.jar $MAIN_CLASS $ARGS_01
